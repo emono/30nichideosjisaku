@@ -1,20 +1,26 @@
 # 『30日でできる！ OS自作入門』 for macOS
-
-『30日でできる！ OS自作入門』の開発環境をmacOSでも扱えるようにします。
+- [30日でできる！ OS自作入門](https://amzn.to/2JqkIWy)の開発環境をmacOSでも扱えるようにします。
 
 ## 動作環境
 
 以下の環境で動作確認を行っています。
 
 - OS
-	- macOS Mojave 10.14
+	- macOS Mojave 10.14.5
+
+```bash
+$ sw_vers
+ProductName:    Mac OS X
+ProductVersion: 10.14.5
+BuildVersion:   18F132
+```
 
 ## 環境構築手順
 
 ### 1. このレポジトリをclone
 
 ```bash
-$ git clone git@github.com:tatsumack/30nichideosjisaku.git
+$ git git@github.com:emono/30nichideosjisaku.git
 ```
 
 ### 2. qemuをインストール
@@ -23,8 +29,10 @@ $ git clone git@github.com:tatsumack/30nichideosjisaku.git
 # Homebrewでインストール
 $ brew install qemu
 
-# バージョンを確認 (現時点でバージョンは`3.1.0`)
+# バージョンを確認 (現時点でバージョンは`4.0.0`)
 $ qemu-system-i386 -version
+QEMU emulator version 4.0.0
+Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
 ```
 
 ### 3. 確認
